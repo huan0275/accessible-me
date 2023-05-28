@@ -8,61 +8,72 @@
   <title>Accessible Me</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="site-header">
+    <a href="#skiptocontact" class="skiptocontact">Skip to Contact &darr;</a>
+    <header class="site-header" role="banner">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
+      <nav class="main-nav" role="navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Studio</a></li>
         </ul>
-      </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
-    </div>
-    <div class="main-content">
-      <h1>Welcome to Jam Box</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner">
-        <h1>Meet the owner</h1>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+      </nav>
+      <img src="https://placekitten.com/1200/900" class="banner" alt="kitten-image">
+    </header>
+    <main class="main-content" role="main">
+      <h2>Welcome to Jam Box</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa
+        evsukit, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferwicks optio
+        quia veritatis.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam
+        omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptahaz! Voluptate iusto
+        error voluptamabus.</p>
+      <section class="owner" role="region">
+        <h2>Meet the owner</h2>
+        <ul role="list" itemscope itemtype="https://schema.org/Person" class="">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
-        <h1>Address</h1>
+        <!-- ne volez pas mes codes  -->
+        <h2>Address</h2>
         <p>
           Jambox Studios
           123 Guitar Road,
           Musicville, Danceistan
           B3T 0L0
         </p>
-      </div>
-      <div class="contact-section">
-        <h1>Contact Us</h1>
+      </section>
+      <div class="contact-section" id="skiptocontact" role="form">
+        <h2>Contact Us</h2>
         <form action="thanks.html">
           <label>Full Name</label>
           <input type="text" placeholder="Full Name">
+          <label>Email</label>
           <input type="text" placeholder="Email">
+          <label>Subject</label>
           <input type="text" placeholder="Subject">
-          <b>Your Message</b>
+          <label>Your Message</label>
           <textarea></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
-    </div>
-    <div class="site-footer">
+    </main>
+    <!--sinon je vais vous signaler  -->
+    <footer class="site-footer" role="contentinfo">
       &copy; 2021 Jam Box Studios
-    </div>
+    </footer>
   </div>
 </body>
+<!-- svp. -->
 
 </html>

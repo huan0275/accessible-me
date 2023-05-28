@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+
   margin: 0;
   padding: 0;
 }
@@ -14,10 +14,36 @@ h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p,
+li {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.skiptocontact:focus {
+  cursor: pointer;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.skiptocontact:hover {
+  cursor: pointer;
+  padding: 2rem;
+  font-size: 2rem;
 }
 
 img {
@@ -41,7 +67,22 @@ img {
   display: block;
   color: inherit;
   text-decoration: none;
-  font-size: 1.25rem;
+}
+
+.main-nav ul li a:focus {
+  cursor: pointer;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.main-nav ul li a:hover {
+  cursor: pointer;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+form label {
+  font-size: 2rem;
 }
 
 form input,
@@ -50,6 +91,7 @@ form textarea {
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
+  font-size: 2rem;
 }
 
 form textarea {
@@ -66,6 +108,18 @@ form button {
   text-transform: uppercase;
 }
 
+/*  ne volez pas mes codes  */
+
+form button:hover,
+form button:focus {
+  cursor: pointer;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+/* sinon je vais vous signaler   */
 .site-footer {
   padding: 2rem 0;
 }
+
+/* svp */
